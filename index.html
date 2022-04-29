@@ -33,7 +33,19 @@
       <main class="mdl-layout__content">
         <br>
         <br>
-          <center><img src="./img/1541620335.svg" style="float:right" alt="pizza" width="40%" height="40%" /></center>
+          <center><img src="./img/1541620335.svg" style="right" alt="pizza" width="40%" height="40%" /></center>
+        <table>
+          <tr>
+            <td> Size </td>
+            <td id="s_result"> </td>
+            <td id="p_result"> </td>
+          </tr>
+          <tr>
+            <td> Toppings </td>
+            <td id="t_options"> </td>
+            <td id="t_result"> </td>
+          </tr>
+        </table>
         <p></p>
           <h6> What size would you like to order?</h6>
           <!--Radio Buttons-->
@@ -71,10 +83,9 @@
           <br>
           <br>
         <!-- Raised button with ripple -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="getPizza()">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="orderPizza()">
           Calculate
         </button>
-        <!-- basic text -->
         <p></p>
         <div id="total_result"></div>
       </main>

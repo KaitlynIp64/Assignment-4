@@ -16,7 +16,7 @@ if (navigator.serviceWorker) {
 /**
  * Input
  */
-function getPizza() {
+function orderPizza() {
   var price = 0;
   var topping = 0;
   var total = 0;
