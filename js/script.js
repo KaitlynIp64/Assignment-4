@@ -27,13 +27,13 @@ function orderPizza() {
 
   if (size1.checked == true) {
     price = 6.0;
-    document.getElementById("s_result").innerHTML = "Large";
+    document.getElementById("size_result").innerHTML = "Large";
   } else if (size2.checked == true) {
     price = 10.0;
-    document.getElementById("s_result").innerHTML = "Extra Large";
+    document.getElementById("size_result").innerHTML = "Extra Large";
   }
 
-  document.getElementById("p_result").innerHTML = "$ " + price;
+  document.getElementById("price_result").innerHTML = "$ " + price;
 
   var topping1 = document.getElementById("topping1");
   var topping2 = document.getElementById("topping2");
@@ -42,22 +42,22 @@ function orderPizza() {
 
   if (topping1.checked == true) {
     topping = 1.0;
-    document.getElementById("t_options").innerHTML = "1 Topping";
+    document.getElementById("topping_options").innerHTML = "1 Topping";
   }
 
   if (topping2.checked == true) {
     topping = 1.75;
-    document.getElementById("t_options").innerHTML = "2 Toppings";
+    document.getElementById("topping_options").innerHTML = "2 Toppings";
   }
 
   if (topping3.checked == true) {
     topping = 2.5;
-    document.getElementById("t_options").innerHTML = "3 Toppings";
+    document.getElementById("topping_options").innerHTML = "3 Toppings";
   }
 
   if (topping4.checked == true) {
     topping = 3.35;
-    document.getElementById("t_options").innerHTML = "4 Toppings";
+    document.getElementById("topping_options").innerHTML = "4 Toppings";
   }
 
   document.getElementById("total_result").innerHTML = "$ " + topping;
